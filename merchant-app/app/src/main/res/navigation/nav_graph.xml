@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FragmentLanding">
+
+    <fragment
+        android:id="@+id/FragmentLanding"
+        android:name="com.jmolina.nftgateway.view.FragmentLanding"
+        tools:layout="@layout/fragment_landing">
+        <action
+            android:id="@+id/action_FragmentLanding_to_fragmentScan"
+            app:destination="@id/fragmentScan"
+            app:enterAnim="@anim/animation_slide_in_left"
+            app:exitAnim="@anim/animation_none"
+            app:popEnterAnim="@anim/animation_none"
+            app:popExitAnim="@anim/animation_slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentDetail"
+        android:name="com.jmolina.nftgateway.view.FragmentDetail"
+        android:label="FragmentDetail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="uri"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_FragmentDetail_to_fragmentResult"
+            app:destination="@id/FragmentResult"
+            app:enterAnim="@anim/animation_slide_in_left"
+            app:exitAnim="@anim/animation_none"
+            app:popEnterAnim="@anim/animation_none"
+            app:popExitAnim="@anim/animation_slide_out_left"
+            app:popUpTo="@id/FragmentLanding"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentScan"
+        android:name="com.jmolina.nftgateway.view.FragmentScan"
+        android:label="FragmentScan">
+        <action
+            android:id="@+id/action_fragmentScan_to_FragmentDetail"
+            app:destination="@id/FragmentDetail"
+            app:enterAnim="@anim/animation_slide_in_left"
+            app:exitAnim="@anim/animation_none"
+            app:popEnterAnim="@anim/animation_none"
+            app:popExitAnim="@anim/animation_slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentResult"
+        android:name="com.jmolina.nftgateway.view.FragmentResult"
+        android:label="FragmentResult">
+        <argument
+            android:name="success"
+            app:argType="boolean" />
+    </fragment>
+</navigation>

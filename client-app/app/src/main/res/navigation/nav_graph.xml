@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FragmentDetail">
+
+    <fragment
+        android:id="@+id/FragmentDetail"
+        android:name="com.jmolina.nftgateway.view.FragmentDetail"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_detail">
+
+        <action
+            android:id="@+id/action_FragmentDetail_to_FragmentQR"
+            app:destination="@id/FragmentQR"
+            app:enterAnim="@anim/animation_slide_in_left"
+            app:exitAnim="@anim/animation_none"
+            app:popEnterAnim="@anim/animation_none"
+            app:popExitAnim="@anim/animation_slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentQR"
+        android:name="com.jmolina.nftgateway.view.FragmentQR"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_qr"/>
+</navigation>

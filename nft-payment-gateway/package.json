@@ -1,0 +1,29 @@
+{
+  "name": "nft-collections",
+  "version": "1.0.0",
+  "repository": "https://github.com/Moliholy/alchemy-final-project.git",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "truffle compile",
+    "test": "truffle test",
+    "deploy": "truffle deploy",
+    "ganache": "ganache-cli -h 0.0.0.0 -p 7545 -d -m 'firm walk jeans response fury kick antique try patch quiz cannon dog'",
+    "lint": "solhint 'contracts/*.sol'",
+    "coverage": "truffle run coverage"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "dotenv": "^16.0.3",
+    "ganache-cli": "^6.12.2",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.8.2",
+    "truffle": "^5.6.5",
+    "truffle-assertions": "^0.9.2",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.5.33"
+  }
+}

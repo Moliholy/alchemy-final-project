@@ -1,0 +1,7 @@
+node_modules/
+build/
+.idea/
+.env
+coverage.json
+coverage/
+logs

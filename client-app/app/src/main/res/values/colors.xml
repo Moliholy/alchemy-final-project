@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coralMain">#FFef7560</color>
+    <color name="oceanDark">#FF1c163d</color>
+    <color name="greenMain">#FF21b25a</color>
+    <color name="redMain">#FFea3455</color>
+    <color name="goldMain">#FFef9c60</color>
+    <color name="goldDark">#FF713c16</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
