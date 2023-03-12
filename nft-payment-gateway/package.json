@@ -16,6 +16,7 @@
     "@openzeppelin/contracts": "^4.8.0"
   },
   "devDependencies": {
+    "ethereumjs-util": "^7.1.5",
     "@openzeppelin/test-helpers": "^0.5.16",
     "dotenv": "^16.0.3",
     "ganache-cli": "^6.12.2",

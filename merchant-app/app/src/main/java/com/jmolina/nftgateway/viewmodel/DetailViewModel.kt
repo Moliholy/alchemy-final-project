@@ -68,10 +68,9 @@ class DetailViewModel(application: Application) : BaseViewModel(application) {
             )
             val map = mapOf(
                 "token" to "1",
-                "date" to "2022-11-10T12:00:00.000Z",
-                "expiry" to "2022-11-10T13:00:00.000Z",
+                "date" to "2023-03-11T12:00:00.000Z",
+                "expiry" to "2023-03-11T13:00:00.000Z",
                 "address" to customerAddress,
-                "userId" to "12356",
                 "merchant" to "1"
             )
             val payload = JSONObject(map).toString()

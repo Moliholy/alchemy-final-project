@@ -27,12 +27,12 @@ class QRViewModel(application: Application): BaseViewModel(application) {
             val path = intArrayOf(44 or HARDENED_BIT, 60 or HARDENED_BIT, 0 or HARDENED_BIT, 0, 0)
             val childKeypair = Bip32ECKeyPair.deriveKeyPair(masterKeypair, path)
             val credentials = Credentials.create(childKeypair)
+            // You can include any metadata
             val map = mapOf(
                 "token" to "1",
-                "date" to "2022-11-10T12:00:00.000Z",
-                "expiry" to "2022-11-10T13:00:00.000Z",
+                "date" to "2023-03-11T12:00:00.000Z",
+                "expiry" to "2023-03-11T13:00:00.000Z",
                 "address" to Keys.toChecksumAddress(credentials.address),
-                "userId" to "12356",
                 "merchant" to "1"
             )
             val payload = JSONObject(map).toString()
